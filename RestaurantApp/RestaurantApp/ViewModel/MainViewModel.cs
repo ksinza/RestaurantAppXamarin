@@ -15,8 +15,8 @@ namespace RestaurantApp.ViewModel
         }
         public List<Pick>  Picks { get; set; }
 
-        //public ICommand OrderCommand => new Command(() =>
-        //    Application.Current.MainPage.Navigation.PushAsync(new OrderPage()));
+        public ICommand OrderCommand => new Command(() =>
+            Application.Current.MainPage.Navigation.PushAsync(new OrderPage()));
 
         private List<Pick> GetPicks()
         {
